@@ -1,0 +1,134 @@
+Isidro Alezandro Rivas
+0907-24-17388
+
+Resumen del Video: Git y GitHub | Curso Práctico de Git y GitHub Desde Cero
+El video enseña desde cero cómo usar Git y GitHub, explicando conceptos básicos como control de versiones y comandos esenciales, además de mostrar cómo subir proyectos al repositorio en GitHub.
+-Conceptos Clave
+Control de Versiones: Esencial para gestionar cambios en proyectos. Ventajas: historial de modificaciones, colaboración y reversión de errores.
+Git y GitHub: 
+Git: Sistema de control de versiones local.
+ GitHub: Plataforma para alojar repositorios en la nube.
+
+Comandos Básicos de Git
+```bash
+Iniciar repositorio
+git init
+Agregar archivos al staging area
+git add [archivo] / git add .
+Confirmar cambios
+git commit -m "mensaje descriptivo"
+Conectar repositorio local con GitHub
+git remote add origin [URL-del-repositorio]
+Subir cambios a GitHub
+git push -u origin main
+```
+
+
+
+
+
+Flujo de Trabajo Típico
+1. Crear repositorio en GitHub - Clonarlo localmente (`git clone`).
+2. Trabajar en ramas (`git branch`, `git checkout`).
+3. Fusionar cambios (`git merge`).
+4. Resolver conflictos si existen.
+
+Herramientas Útiles en GitHub
+- Pull Requests: Propuestas de cambios para revisión.
+- Issues: Seguimiento de tareas/errores.
+- GitHub Pages: Hosting gratuito para sitios web estáticos.
+
+Subir Proyecto Existente a GitHub
+1. Crear repo vacío en GitHub.
+2. Ejecutar en terminal:
+   ```bash
+   git remote add origin [URL]
+   git branch -M main
+   git push -u origin main
+   ```
+
+
+
+Respuestas a Preguntas:
+
+1. ¿Qué es GIT?  
+Git es un sistema de control de versiones local que permite:  
+- Rastrear cambios en archivos de código.  
+- Crear historiales de modificaciones.  
+- Trabajar en equipo sin sobrescribir trabajo ajeno.  
+
+2. Comandos más importantes de Git  
+`git init` Inicializa un repositorio local. 
+`git add [archivo]` Agrega archivos al área de staging (preparación). 
+`git commit -m "mensaje"` Guarda cambios en el historial con una descripción.  
+`git remote add origin [URL]` Conecta el repositorio local con uno remoto (ej: GitHub). 
+`git push` | Sube cambios al repositorio remoto. 
+`git branch [nombre]` Crea una nueva rama.  
+`git checkout [rama]` | Cambia entre ramas. 
+`git merge [rama]` Fusiona una rama con la actual. 
+
+3. Git - GitHub  
+ Git GitHub
+|Herramienta local para control de versiones. | Plataforma en la nube para alojar repositorios. |  
+| No requiere internet (excepto para sincronizar). | Permite colaboración remota y gestión de proyectos. |  
+| Ejecutable en tu computadora. | Ofrece herramientas adicionales: Issues, Pull Requests, Pages.|  
+
+
+
+
+
+
+
+4. Comandos para subir cambios  
+```bash
+git add .                   Agrega todos los archivos modificados
+git commit -m "Descripción"   Confirma cambios localmente
+git push origin main       Sube cambios al repositorio remoto (rama main)
+```
+
+5. ¿Qué es una branch (rama)?  
+Es una línea independiente de desarrollo que permite:  
+- Trabajar en nuevas funcionalidades sin afectar la versión principal (`main`).  
+- Experimentar sin riesgos.  
+- Organizar el trabajo en equipo (ej: una rama por desarrollador).  
+
+6. Diferencias entre Repositorio Local y Remoto  
+| Local| Remoto |  
+| Almacenado en tu computadora. | Alojado en un servidor (ej: GitHub, GitLab). |  
+| Acceso sin internet. | Requiere conexión a internet. |  
+| Ejemplo: Carpeta de tu proyecto. | Ejemplo: Repositorio en github.com/tu-usuario/proyecto.|  
+
+
+
+7. Comandos básicos  
+Inicializar un repositorio  
+```bash
+git init
+```
+Descargar un repositorio  
+```bash
+git clone [URL-del-repositorio]
+```
+Agregar archivos al repositorio local  
+```bash
+git add [nombre-archivo]    Archivo específico
+git add .                  Todos los archivos modificados
+```
+Confirmar cambios  
+```bash
+git commit -m "Mensaje descriptivo"
+```
+Subir cambios al remoto  
+```bash
+git push origin [nombre-rama]
+```
+Revertir cambios en una branch  
+- **Descartar cambios no guardados**:  
+  ```bash
+  git checkout -- [archivo]
+  ```
+- Eliminar commits recientes:  
+  ```bash
+  git reset --hard HEAD~1   Borra el último commit 
+
+
